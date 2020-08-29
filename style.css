@@ -1,0 +1,167 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-size: normal
+}
+
+.page-container {
+    background-color:#6fb640
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "content content content"
+    "footer footer footer"
+    ;
+}
+
+/* header & menu section */
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "menu-contact menu-contact"
+    "menu-logo menu-main"
+    ;
+    background-color: #6fb640;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.menu-contact {
+    grid-area: menu-contact;
+    background-color: #484848;
+    color: #6fb640;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 52px;
+}
+
+.menu-contact > div {
+    margin: 5px;
+}
+
+.menu-contact > div a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 2s;
+}
+
+.menu-contact > div a:hover {
+    color:#7FFF00;
+}
+
+i {
+    margin: 4px;
+}
+
+.menu-logo {
+    grid-area: menu-logo;
+}
+
+.logo{ 
+    max-height: 60px;
+    width: auto;
+    margin-left: 80px;
+}
+
+
+.menu-main {
+    grid-area: menu-main;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.menu-main-nav {
+    list-style-type: none;
+    float: left;
+}
+
+.menu-main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    margin-top: 5px;
+}
+
+.menu-main-nav li a {
+    text-decoration: none;
+    color: #484848;
+    transition: color 2s;
+}
+
+.menu-main-nav li a:hover {
+    color: gray;
+}
+
+
+/* Content Section */
+
+.content {
+    grid-area: content; 
+}
+
+.EZOlogo {
+    float: right;
+    width: 10vw;
+}
+.content-first {
+    background-image: linear-gradient(187deg,#fbb040 0%,rgba(249,237,50,0.5) 100%) !important;
+    margin: 0px;
+    padding: 50px;
+}
+
+.content-first h1 {
+    color: #e02b20;
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 0px 3px gray;
+    position: relative;
+    left: 40px;   
+}
+
+.content-first >div p {
+    color:#7f3f98;
+    font-weight: 800;
+    font-family: 'Baloo 2', cursive;
+    text-shadow: 0px 2px gray;
+    position: relative;
+    left: 40px;
+}
+
+.content-first >div {
+    position: relative;
+    left: 40px;
+}
+
+.content-first-img {
+    float:right;
+    width: 20vw;
+    position: relative;
+    bottom: 140px;
+}
+
+
+/* footer section */
+
+.footer {
+    grid-area: footer;
+}
