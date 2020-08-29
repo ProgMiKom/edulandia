@@ -6,4 +6,4 @@ wvw;dvwmnd
 d;vlm	wd;
 vlm
 
-nowa linia kodu
+bez linii kodu
