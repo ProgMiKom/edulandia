@@ -7,7 +7,7 @@ body {
 }
 
 .page-container {
-    background-color:#6fb640
+    background-color:white;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: 
